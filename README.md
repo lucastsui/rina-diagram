@@ -1,16 +1,31 @@
-# React + Vite
+# RINA Interactive Diagram
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive architectural diagram of **RINA (Recursive InterNetwork Architecture)** based on John Day's design. Built with React and SVG.
 
-Currently, two official plugins are available:
+**[Live Demo](https://lucastsui.github.io/rina-diagram/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Views
 
-## React Compiler
+- **Architecture Overview** — Full system layout with two communicating Application Processes, IPC API, DIF internals, and recursive (N-1)-DIF
+- **Data Flow Path** — Step-by-step path of an SDU from source AP to destination AP
+- **EFCP Internals** — DTP, DTCP, and State Vector structure per-flow
+- **Flow Allocation** — Sequence diagram showing the full flow allocation process
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Click any component for detailed spec information. Scroll to zoom, drag to pan.
 
-## Expanding the ESLint configuration
+## Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## License
+
+[MIT](LICENSE)
